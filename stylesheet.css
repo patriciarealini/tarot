@@ -16,6 +16,9 @@ h1, h2 {
 	margin-right: auto;
 	padding: 5px;
 }
+.buttons img {
+	height: 200px;
+}
 .buttons input {
 	margin-bottom: 20px;
 	background-color: #000000;
@@ -28,5 +31,5 @@ h1, h2 {
 }
 #hand img {
 	padding: 5px;
-	width: 200px;
+	height: 225px;
 }

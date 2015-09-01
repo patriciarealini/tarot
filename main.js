@@ -10,9 +10,19 @@ var cards = new Array ();
 var cardsLeftToDeal = 7;
 var cardsDealt = 0;
 
-//create a 3 layer object, layer 1. position, layer 2. card, layer 3. orientation
+//create a 3 layer object: 
+//layer 1. card (78) 
+//layer 2. position (7)
+//layer 3. orientation (2)
 
 var deck = {
+	fool: {},
+	magician: {},
+	highPriestess: {},
+
+
+}
+
 	thePast: {
 
 	},
@@ -34,18 +44,17 @@ var deck = {
 	theOutcome: {
 		
 	},
-}
 
-cards[0] = "00_Fool";
-cards[1] = "01_Magician";
-cards[2] = "02_High_Priestess";
-cards[3] = "03_Empress";
-cards[4] = "04_Emporer";
-cards[5] = "05_Hierophant";
-cards[6] = "06_Lovers";
-cards[7] = "07_Chariot";
-cards[8] = "08_Strength";
-cards[9] = "09_Hermit";
+cards[00] = "00_Fool";
+cards[01] = "01_Magician";
+cards[02] = "02_High_Priestess";
+cards[03] = "03_Empress";
+cards[04] = "04_Emporer";
+cards[05] = "05_Hierophant";
+cards[06] = "06_Lovers";
+cards[07] = "07_Chariot";
+cards[08] = "08_Strength";
+cards[09] = "09_Hermit";
 cards[10] = "10_Wheel_of_Fortune";
 cards[11] = "11_Justice";
 cards[12] = "12_Hanged_Man";
@@ -76,7 +85,7 @@ cards[36] = "36_Ace_of_Pentacles";
 cards[37] = "37_Two_of_Pentacles";
 cards[38] = "38_Three_of_Pentacles";
 cards[39] = "39_Four_of_Pentacles";
-cards[40] = "40_Five_of-Pentacles";
+cards[40] = "40_Five_of_Pentacles";
 cards[41] = "41_Six_of_Pentacles";
 cards[42] = "42_Seven_of_Pentacles";
 cards[43] = "43_Eight_of_Pentacles";
@@ -149,7 +158,6 @@ var dealCard = function(i) {
 //MODULE 3: Execution by JQuery
 
 //jquery: deal cards when "deck" is clicked
-//alternative: i would have liked to maye try and deal all 5 cards at once? Would be more user friendly 
 $(document).ready(function() {
 	$('#deal').click(function() {
 		console.log(dealCard(random()));
