@@ -1,0 +1,32 @@
+body {
+	background-color: #000000;
+}
+h1, h2 {
+	text-align: center;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-weight: 100;
+	color: #FFFFFF;
+	margin-right: 25%;
+	margin-left: 25%;
+	padding-top: 10px;
+}
+.buttons img, .buttons input {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+}
+.buttons input {
+	margin-bottom: 20px;
+	background-color: #000000;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-weight: 100;
+	font-size: 20px;
+	color: #FFFFFF;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+#hand img {
+	padding: 5px;
+	width: 200px;
+}
