@@ -1,8 +1,16 @@
 # Tarot Project
 
-This site produces random tarot card readings for the rising sun layout to help you find a new perspective on a specific problem.
+This site produces tarot card readings for the horseshoe spread to help you find a new perspective on a specific problem. 
 
-## Learning
+## Learning Goals
 
-This project is intended to help me learn AJAX requests, data structures & object oriented programming. In the future I hope to continue learning about node & databases through this project. 
+This is my first project. I picked this project with the intention of learning data structures & object oriented programming. Because the tarot deck has 78 cards that can be presented upside up or upside down (2 orientations) and the horsehoe spread involves 7 positions, I choose to house the 1092 reading combinations in a three layer nested object. In the future this project will be able to save your readings & help me to continue learning about node, AJAX requests & databases. 
+
+## Features To Build
+
+1. Add the option to choose if your problem is related to relationships, finances, career or health & happiness. Readings will produce strings that are specifically related to the subject selected. 
+2. Add the option to save your reading with a note so that you can document the question or problem related to the reading. Log in via facebook/google/twitter to save? 
+3. Add sharing to twitter & facebook. 
+4. Add other tarot spreads.
+
 
