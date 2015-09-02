@@ -10,46 +10,13 @@ var cards = new Array ();
 var cardsLeftToDeal = 7;
 var cardsDealt = 0;
 
-//create a 3 layer object: 
-//layer 1. card (78) 
-//layer 2. position (7)
-//layer 3. orientation (2)
 
-var deck = {
-	fool: {},
-	magician: {},
-	highPriestess: {},
-
-
-}
-
-	thePast: {
-
-	},
-	thePresent: {
-
-	},
-	whatIsHelping: {
-
-	},
-	obstaclesToOvercome: {
-		
-	},
-	attitudesOfOthers: {
-		
-	},
-	whatYouShouldDo: {
-		
-	},
-	theOutcome: {
-		
-	},
-
+//array containing the 78 cards with their img names
 cards[00] = "00_Fool";
 cards[01] = "01_Magician";
 cards[02] = "02_High_Priestess";
 cards[03] = "03_Empress";
-cards[04] = "04_Emporer";
+cards[04] = "04_Emperor";
 cards[05] = "05_Hierophant";
 cards[06] = "06_Lovers";
 cards[07] = "07_Chariot";
@@ -128,7 +95,7 @@ cards[77] = "77_King_of_Swords";
 
 // create function to randomly select a number that corresponds with the number of cards available. Use Math.floor to remove remainder from the random calculation
 var random = function() {
-  	return Math.floor(Math.random() * (78-cardsDealt));
+  	return Math.round(Math.random() * (78-cardsDealt));
 };
 
 //create a function to remove a card once it has been used. This is a basic way to avoid duplicates. Implies that to deal we must refresh the page. 
@@ -157,16 +124,2334 @@ var dealCard = function(i) {
 
 //MODULE 3: Execution by JQuery
 
-//jquery: deal cards when "deck" is clicked
+//jquery: deal cards when "deck" is clicked & shuffle the deck by reloading the page
 $(document).ready(function() {
 	$('#deal').click(function() {
 		console.log(dealCard(random()));
 	});
-});
-
-//jquery: shuffle the deck by reloading the page
-$(document).ready(function() {
 	$('#shuffle').click(function() {
 		location.reload();
 	});
 });
+
+
+$(document).ready(function() {
+
+});
+
+//create a 3 layer object: 
+//layer 1. card (78) 
+//layer 2. position (7)
+//layer 3. orientation (2)
+var deck = {
+	fool: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	magician: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},	
+	},
+	highPriestess: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	empress: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	hierophant: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	lovers: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	chariot: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	strength: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	hermit: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	wheelOfFortune: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	justice: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	hangedMan: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	death: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	temperance: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	devil: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	tower: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	star: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	moon: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	sun: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	judgement: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	world: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	aceOfWands: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	twoOfWands: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	threeOfWands: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	fourOfWands: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	fiveOfWands: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	sixOfWands: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	sevenOfWands: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	eightOfWands: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	nineOfWands: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	tenOfWands: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	pageOfWands: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	knightOfWands: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	queenOfWands: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	kingOfWands: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	aceOfPentacles: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	twoOfPentacles: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	threeOfPentacles: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	fourOfPentacles: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	fiveOfPentacles: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	sixOfPentacles: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	sevenOfPentacles: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	eightOfPentacles: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	nineOfPentacles: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	tenOfPentacles: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	pageOfPentacles: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	knightOfPentacles: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	queenOfPentacles: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	kingOfPentacles: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	aceOfCups: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	twoOfCups: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	threeOfCups: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	fourOfCups: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	fiveOfCups: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	sixOfCups: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	sevenOfCups: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	eightOfCups: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	nineOfCups: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	tenOfCups: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	pageOfCups: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	knightOfCups: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	queenOfCups: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	kingOfCups: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	aceOfSwords: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	twoOfSwords: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	threeOfSwords: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	fourOfSwords: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	fiveOfSwords: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	sixOfSwords: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	sevenOfSwords: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	eightOfSwords: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	nineOfSwords: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	tenOfSwords: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	pageOfSwords: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	knightOfSwords: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	queenOfSwords: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+	kingOfSwords: {
+		thePast: {
+			up: [],
+			down: [],
+		},
+		thePresent: {
+			up: [],
+			down: [],
+		},
+		whatIsHelping: {
+			up: [],
+			down: [],
+		},
+		obstaclesToOvercome: {
+			up: [],
+			down: [],
+		},
+		attitudesOfOthers: {
+			up: [],
+			down: [],
+		},
+		whatYouShouldDo: {
+			up: [],
+			down: [],
+		},
+		theOutcome: {
+			up: [],
+			down: [],
+		},
+	},
+}

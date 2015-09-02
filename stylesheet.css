@@ -1,5 +1,10 @@
 body {
-	background-color: #000000;
+	background: url(images/background/purplenightsky.jpeg), 
+		linear-gradient(to top, #CD663B, #35222C, #1D151E), 
+		black;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 h1, h2 {
 	text-align: center;
