@@ -9,7 +9,7 @@ html, body, h1, h2, h3, h4, p, div, ul, li, a {
 	text-decoration: none;
 }
 @font-face {
-	
+
 }
 @media screen and (min-width:600px)  {
 
@@ -42,7 +42,7 @@ h1, h2 {
 }
 .buttons input {
 	margin-bottom: 20px;
-	background-color: #000000;
+	background-color: transparent;
 	font-family: "Helvetica Neue", Helvetica, sans-serif;
 	font-weight: 100;
 	font-size: 20px;

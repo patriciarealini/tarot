@@ -12,4 +12,5 @@ These are the tasks I am setting out for myself on this project. This list will 
 - [ ] Build around the app a site design.
 - [ ] Make sure all the design is responsive.
 - [ ] Change deck image, illustration of Pamela Colman Smith dealing cards?
+- [ ] Arrange for the cards dealt to be positioned in an arch on the center of the page
 - [ ] 

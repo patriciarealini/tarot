@@ -94,7 +94,7 @@ cards[77] = "77_King_of_Swords";
 
 // create function to randomly select a number that corresponds with the number of cards available. Used Math.floor to remove remainder from the random calculation, found that i could never get the King Of Swords because 78 was an impossibility. opted for math.round in order to achieve that possibility. 
 var random = function() {
-  	return Math.round(Math.random() * (78-cardsDealt));
+  	return Math.round(Math.random() * (77-cardsDealt));
 };
 
 //create a function to remove a card once it has been used. This is a basic way to avoid duplicates. Implies that to deal we must refresh the page. 
