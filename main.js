@@ -1,12 +1,11 @@
-//PSEUDOCODE & alternative ideas
+//Tarot Card App
 
-//MODULE 1: variables
+//MODULE 1A: Declarations
 
 //create new object with cards
-var deck = new Object ();
 var cards = new Array ();
 
-//create a variable to limit cards dealt to 7 & to test in console
+//create variables to limit cards dealt to 7 & to test in console
 var cardsLeftToDeal = 7;
 var cardsDealt = 0;
 
@@ -91,9 +90,9 @@ cards[75] = "75_Knight_of_Swords";
 cards[76] = "76_Queen_of_Swords";
 cards[77] = "77_King_of_Swords";
 
-//MODULE 2: functions
+//MODULE 2A: Functions
 
-// create function to randomly select a number that corresponds with the number of cards available. Use Math.floor to remove remainder from the random calculation
+// create function to randomly select a number that corresponds with the number of cards available. Used Math.floor to remove remainder from the random calculation, found that i could never get the King Of Swords because 78 was an impossibility. opted for math.round in order to achieve that possibility. 
 var random = function() {
   	return Math.round(Math.random() * (78-cardsDealt));
 };
@@ -114,7 +113,7 @@ var dealCard = function(i) {
 	} else {
 		//display card chosen in HTML by creating an image element
 		var img = document.createElement("img");
-		img.src = "images/deck/" + cards[i] + ".jpg";
+		img.src = ("images/deck/" + cards[i] + ".jpg");
 		img.alt = cards[i];
 
 		document.getElementById("hand").appendChild(img);
@@ -122,7 +121,7 @@ var dealCard = function(i) {
 	};
 };
 
-//MODULE 3: Execution by JQuery
+//MODULE 3A: Execution (JQuery)
 
 //jquery: deal cards when "deck" is clicked & shuffle the deck by reloading the page
 $(document).ready(function() {
@@ -135,11 +134,11 @@ $(document).ready(function() {
 });
 
 
-$(document).ready(function() {
-
-});
+// MODULE 2A: Declarations
 
 //create a 3 layer object: 
+var deck = new Object ();
+
 //layer 1. card (78) 
 //layer 2. position (7)
 //layer 3. orientation (2)
@@ -2454,4 +2453,11 @@ var deck = {
 			down: [],
 		},
 	},
-}
+};
+
+// MODULE 2B: Functions
+
+//create a function that prints the string stored in the deck object for the card that is dealt.
+
+// MODULE 2C: Execution
+
