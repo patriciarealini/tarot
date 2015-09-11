@@ -142,7 +142,7 @@ var deck = new Object ();
 //layer 1. card (78) 
 //layer 2. position (7)
 //layer 3. orientation (2)
-var deck = {
+deck = {
 	fool: {
 		thePast: {
 			up: [],
@@ -2458,6 +2458,8 @@ var deck = {
 // MODULE 2B: Functions
 
 //create a function that prints the string stored in the deck object for the card that is dealt.
+
+
 
 // MODULE 2C: Execution
 
