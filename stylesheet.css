@@ -16,7 +16,7 @@ html, body, h1, h2, h3, h4, p, div, ul, li, a {
 }
 .topHalf {
 	width: 100vw;
-	height: 100 vh;
+	height: 100vh;
 	background: url(images/background/starrynightsky.jpeg), black;
 	background-size: 100%;
 	background-repeat: no-repeat;
