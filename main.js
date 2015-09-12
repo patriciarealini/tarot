@@ -97,6 +97,11 @@ var random = function() {
   	return Math.round(Math.random() * (77-cardsDealt));
 };
 
+// create a function to randomly determine if the card will be oriented up or down, if randomOrient returns 0, do nothing. if randomOrient returns 1, rotate the card at a 180 degree angle.
+var randomOrient = function() {
+	return Math.round(Math.random());
+};
+
 //create a function to remove a card once it has been used. This is a basic way to avoid duplicates. Implies that to deal we must refresh the page. 
 var removeCard = function(k) {
 	for (var j=k; j<cards.length; j++) {
@@ -104,21 +109,31 @@ var removeCard = function(k) {
 	}
 	cardsLeftToDeal--;
 	cardsDealt++;
-}
+};
 
-//create function to deal your random number as a card
+// create function to deal your random number as a card 
+// also orient the card up if randomOrient is 0 & down if randomOrient is 1
 var dealCard = function(i) {
 	if (cardsLeftToDeal == 0) {
 		return false;
 	} else {
 		//display card chosen in HTML by creating an image element
 		var img = document.createElement("img");
+		var cardJustDealt = cards[i];
+		var orient = randomOrient();
+		$(img).attr('id', cardJustDealt);
 		img.src = ("images/deck/" + cards[i] + ".jpg");
 		img.alt = cards[i];
-
-		document.getElementById("hand").appendChild(img);
-		removeCard(i);
-	};
+		
+		if (orient === 1) {
+			$(img).addClass("orientation");
+			document.getElementById("hand").appendChild(img);
+			removeCard(i);
+		} else {
+			document.getElementById("hand").appendChild(img);
+			removeCard(i);
+		}
+	}
 };
 
 //MODULE 3A: Execution (JQuery)
@@ -132,7 +147,6 @@ $(document).ready(function() {
 		location.reload();
 	});
 });
-
 
 // MODULE 2A: Declarations
 

@@ -1,3 +1,8 @@
+/*
+Colors 
+
+
+*/
 html, body, h1, h2, h3, h4, p, div, ul, li, a {
 	padding: 0;
 	border: 0;
@@ -8,19 +13,21 @@ html, body, h1, h2, h3, h4, p, div, ul, li, a {
 	list-style: none;
 	text-decoration: none;
 }
+/**/
 @font-face {
 
 }
+/* Responsive */
 @media screen and (min-width:600px)  {
 
 }
-.topHalf {
+.backdrop {
 	width: 100vw;
 	height: 100vh;
 	background: url(images/background/starrynightsky.jpeg), black;
 	background-size: 100%;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: fixed;
 }
 h1, h2 {
 	text-align: center;
@@ -53,7 +60,14 @@ h1, h2 {
 	padding-left: 20px;
 	padding-right: 20px;
 }
+
+#hand {
+
+}
 #hand img {
 	padding: 7px;
 	height: 225px;
+}
+.orientation {
+	transform: rotate(180deg);
 }
