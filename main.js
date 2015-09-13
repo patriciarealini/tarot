@@ -126,10 +126,11 @@ var dealCard = function(i) {
 		img.alt = cards[i];
 		
 		if (orient === 1) {
-			$(img).addClass("orientation");
+			$(img).addClass("orientationDown");
 			document.getElementById("hand").appendChild(img);
 			removeCard(i);
 		} else {
+			$(img).addClass("orientationUp");
 			document.getElementById("hand").appendChild(img);
 			removeCard(i);
 		}
