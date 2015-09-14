@@ -13,4 +13,5 @@ This is my first project. I picked this project with the intention of learning d
 3. Add sharing to twitter & facebook. 
 4. Add other tarot spreads.
 
+For a more detailed look at the project's progress, check out [Issues](https://github.com/patriciarealini/tarot/blob/master/issues.md).
 
