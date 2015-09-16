@@ -1,7 +1,7 @@
 /*
-Colors 
-
-
+* Colors 
+* 
+* 
 */
 html, body, h1, h2, h3, h4, p, div, ul, li, a {
 	padding: 0;
@@ -21,19 +21,24 @@ html, body, h1, h2, h3, h4, p, div, ul, li, a {
 @media screen and (min-width:600px)  {
 
 }
+body {
+	background: rgb(195, 181, 194);
+}
 .backdrop {
 	width: 100vw;
 	height: 100vh;
-	background: url(images/background/starrynightsky.jpeg), black;
-	background-size: 100%;
+	/*3
+	background: url(images/background/starrynightsky.jpg), black;
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: fixed;
+	*/
 }
 h1, h2 {
 	text-align: center;
 	font-family: "Helvetica Neue", Helvetica, sans-serif;
 	font-weight: 100;
-	color: #FFFFFF;
+	color: #000000;
 	margin-right: 25%;
 	margin-left: 25%;
 	padding-top: 10px;
@@ -56,18 +61,17 @@ h1, h2 {
 	font-family: "Helvetica Neue", Helvetica, sans-serif;
 	font-weight: 100;
 	font-size: 20px;
-	color: #FFFFFF;
+	color: #000000;
 	padding-left: 20px;
 	padding-right: 20px;
-}
-
-#hand {
-
+	border: 2px solid black;
 }
 #hand img {
-	padding: 7px;
+	margin: 7px;
 	height: 225px;
+	border: 10px solid rgb(255, 255, 255);
+	border-radius: 10px;
 }
-.orientation {
+.orientationDown {
 	transform: rotate(180deg);
 }
