@@ -2322,9 +2322,12 @@ deck = {
 };
 
 // MODULE 2: Functions
+//create functions that prints the string stored in the deck object for the card that is dealt.
 
-//create a function that prints the string stored in the deck object for the card that is dealt.
+//fetch the element class to get the name of the card. 
+//fetch the element class to get the position of the card.
+//fetch the element class to get the orientation of the card. 
 
-
+//get & output the appropriate object based on the classes assigned to the element. 
 
 // MODULE 3: Execution
