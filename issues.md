@@ -2,6 +2,7 @@
 
 These are the tasks I am setting out for myself on this project. This list will grow exponentially but it will also keep me on task & help keep this project moving forward. 
 
+- [ ] In deal.js, add a class for the position that the card is dealt to. 
 - [x] Format the deck object. _September 23, 2015_ 
 - [ ] Fill deck object with "readings".
 - [x] Write a function that has a 50/50 chance of dealing the card upside down & registering that orientation for the output of "readings". _Completed 09/12/2015_
