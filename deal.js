@@ -120,7 +120,8 @@ var dealCard = function(i) {
 		var img = document.createElement("img");
 		var cardJustDealt = cards[i];
 		var orient = randomOrient();
-		$(img).attr('id', cardJustDealt);
+		$(img).addClass(cardJustDealt);
+		// addClass for card's position (1-7)
 		img.src = ("images/deck/" + cards[i] + ".jpg");
 		img.alt = cards[i];
 		
